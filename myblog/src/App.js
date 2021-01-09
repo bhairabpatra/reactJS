@@ -19,17 +19,21 @@ import Login from "./components/Login";
 import CreateStudent from "./components/CreateStudent";
 import EditStudent from "./components/EditStdent";
 import StudentList from "./components/StudentList";
+import Home from "./components/Home"
 function App() {
   return (
 
 
     <Router>
     <div className="App">
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
-          <Link className="navbar-brand" to={"/sign-in"}>positronX.io</Link>
+          <Link className="navbar-brand" to={"/home"}>Xhairab-io</Link>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+                <Link className="nav-link" to={"/home"}>Home</Link>
+              </li>
             <li className="nav-item">
                 <Link className="nav-link" to={"/create-student"}>CreateStudent</Link>
               </li>
@@ -50,17 +54,18 @@ function App() {
         </div>
       </nav>
 
-      <div className="auth-wrapper">
-        <div className="auth-inner">
+      <div className="container">
+        
           <Switch>
-            <Route exact path='/' component={Login} />
+            <Route exact path='/' component={Home} />
+            <Route path="/home" component={Home} />
             <Route path="/create-student" component={CreateStudent} />
-            <Route path="/edit-student/:id" component={EditStudent} />
+            <Route path="/edit-student" component={EditStudent} />
             <Route path="/student-list" component={StudentList} />
             <Route path="/sign-in" component={Login} />
             <Route path="/sign-up" component={Signup} />
           </Switch>
-        </div>
+       
       </div>
     </div>
   

@@ -6,8 +6,10 @@ import './createStudent.scss'
 
 export default class createStudent extends Component {
     render() {
+      console.log(this.props)
       return (
-       <div class="form-wrapper">
+ 
+       <div class="component-create-student">
         <Form>
           <Form.Group controlId="Name">
             <Form.Label>Name</Form.Label>
