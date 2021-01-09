@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+
+}
+h1{
+  color: aqua;
+}
+
+p{
+  font-size: 20px;
+  color: red;
+  background-color: aquamarine;
+}
