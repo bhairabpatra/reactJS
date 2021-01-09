@@ -15,7 +15,7 @@ export default class home extends Component {
 render() {
       return ( 
          <div className="component-home">          
-          <CreateStudent title={this.state.name} />
+           
         </div>
         )
     }

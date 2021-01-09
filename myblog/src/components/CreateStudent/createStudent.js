@@ -6,7 +6,7 @@ import './createStudent.scss'
 
 export default class createStudent extends Component {
     render() {
-      console.log(this.props)
+  
       return (
  
        <div class="component-create-student">
